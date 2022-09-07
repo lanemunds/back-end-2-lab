@@ -15,7 +15,7 @@ createHouse:(req,res)=>{
     const {address, price, imageURL} = req.body
     let newHouse = {
         address,
-        price,
+        price : Number(price) ,
         imageURL,
         id: globalID
     }
